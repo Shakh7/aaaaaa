@@ -1,21 +1,39 @@
-Event Planning Application
+# Event Planning Application
 
-The Event Planning Application is a dynamic web application that allows users to create, view, update, and delete events. This application is built using modern web technologies and follows best practices for web development.
+**About the App**
 
-Features
-Create Events: Users can create new events by providing details such as date, location, and description.
-View Events: Users can view a list of upcoming and past events, sorted by date.
-Update Events: Users can update the details of events they have created, such as changing the date, location, or description.
-Delete Events: Users can delete events they have created if they are no longer needed.
-Technologies Used
-Front-end: HTML, CSS, JavaScript
-Back-end: [Node.js]
-Database: [SQLite]
+The Event Planning Application is a dynamic web application built using Node.js, Express.js, and other libraries. It allows users to create, read, update, and delete events. Each event can have details such as date, location, and description. Users can view upcoming and past events, as well as manage the events they have created.
 
-Getting Started
-To run this application locally, follow these steps:
+**Installation and Running the App Locally**
 
-Clone the repository: git clone https://github.com/your-username/event-planning-app.git
-Install dependencies: npm install
-Start the application: node app.js
-Open your web browser and navigate to http://localhost:3000
+1. Clone the repository from [GitHub repository link].
+2. Navigate to the project directory: `cd event-planning-app`
+3. Install the dependencies: `npm install`
+4. Start the application: `node app.js`
+5. The app will be running at http://localhost:3000
+
+**Dependencies**
+
+The following dependencies are used in the Event Planning Application:
+
+- Express.js
+- Pug (View Engine)
+- Sequelize (ORM for Database)
+- MySQL (Database)
+- Bcrypt (Password Hashing)
+
+**Repository and Hosted Application**
+
+- Source Code Repository: [GitHub repository link]
+- Hosted Application: [Hosted application link (e.g., Glitch)]
+
+**Project Structure**
+
+- `app.js`: The entry point of the application
+- `package.json`: The project configuration file
+- `.gitignore`: Includes the `/node_modules` folder to prevent uploading it to the repository.
+- `/routes`: Contains route files for handling different route groups (e.g., `/events`).
+- `/views`: Contains templates for rendering views (using Pug in this case).
+- `/controllers`: Contains controller logic for handling routed actions.
+- `/services`: Contains service layer logic for handling business logic and data access.
+- `/models`: Contains Sequelize models for the application's data entities (e.g., User, Event).
